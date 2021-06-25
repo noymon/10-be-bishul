@@ -490,6 +490,8 @@ yes-display{
     height: 45px;
     text-decoration: none;
     margin-top: 10px;
+    position: absolute;
+    bottom: 7px;
 }
 
 /*------ תמונות של צלחות בקרוסלה + מה שמתקשר לג'בה סקריפט ------'*/
