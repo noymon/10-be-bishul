@@ -294,12 +294,12 @@ aside#foodPic > div {
 
 #fork-pic {
     right: 111px;
-    top: 606px;
+    top: 842px;
     transform: rotate( -45deg );
 }
 
 #knife-pic {
-    right: 900px;
+    right: 683px;
     top: 1485px;
     transform: rotate( 24deg );
 }
@@ -309,11 +309,28 @@ aside#foodPic > div {
     top: 1282px;
     transform: rotate( 24deg );
 }
+#smaller-fork {
+    right: 1113px;
+    top: 424px;
+    transform: rotate( 148deg );
+}
 
+#smaller-knife {
+    right: 1048px;
+    top: 29px;
+    transform: rotate( 29deg );
+}
 
-
-
-
+#smaller-spoon {
+    right: 91px;
+    top: 110px;
+    transform: rotate( 83deg );
+}
+#another-spoon {
+    right: 885px;
+    top: 1730px;
+    transform: rotate( 107deg );
+}
 /*----------------------------------------------------------------- תוכן --------------------------------------------------------------*/
 h1, h2 {
     font-weight: 900;
