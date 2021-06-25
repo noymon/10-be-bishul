@@ -1,0 +1,402 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: 'GveretLevinAlefAlefAlef-Regular';
+    src: url('../font/GveretLevinAlefAlefAlef-Regular.ttf') format('truetype');
+}
+body {
+    direction: rtl;
+    background-image: url('../images/background/background-squares-01.png');
+    background-color: #EDEDED;
+    font-family: Rubik;
+    margin: 0 auto;
+}
+
+#container{
+    margin: 0 auto;
+    width: 1280px;
+    display: contents;
+}
+
+#mainContent {
+    background-color: #F4F2EF;
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    font-family: Rubik;
+    padding-top: 78px;
+    font-size: 14pt;
+}
+
+/*----------------- קישורים שאינם פעילים ------------------*/
+.notActive {
+    cursor: not-allowed;
+    color: grey;
+}
+
+
+/*----------------------------תפריט ניווט נפתח מתוך המתכונים -----------------------*/
+#insideRecipes {
+    display: none;
+    position: absolute;
+    margin-right: -44px;
+    margin-top: 430px;
+    width: 257px;
+    height: 343px;
+    list-style: none;
+    border-radius: 25px;
+    background-color: ghostwhite;
+    text-align: right;
+}
+
+    #insideRecipes li {
+        padding-top: 40px;
+    }
+/*    -------פתיחת תת תפריט של מתכונים -----*/
+#upperNav li:hover #insideRecipes, #upperNav li:focus #insideRecipes {
+    display: block;
+}
+
+/*----------------------------תפריט ניווט נפתח מתוך הטיפים -----------------------*/
+#insideTips {
+    display: none;
+    position: absolute;
+    margin-right: -44px;
+    margin-top: 242px;
+    width: 257px;
+    height: 155px;
+    list-style: none;
+    border-radius: 25px;
+    background-color: ghostwhite;
+    text-align: right;
+}
+
+    #insideTips li {
+        padding-top: 40px;
+        padding-right: 40px;
+    }
+/*    -------פתיחת תת תפריט של טיפים -----*/
+#upperNav li:hover #insideTips, #upperNav li:focus #insideTips {
+    display: block;
+}
+
+/*הגדרות סרגל ניווט ראשי+ ברד קראמבס*/
+ul#upperNav > li {
+    margin: 5px 40px;
+    font-size: 16pt;
+    height: 100px;
+}
+
+ul#insideRecipes > li {
+    margin: 5px 40px;
+    font-size: 16pt;
+}
+
+li.nav1 {
+    display: flex;
+    align-items: center;
+}
+
+/*-----------הגדרות פירורי לחם -----*/
+nav ol li {
+    list-style: none;
+    display: inline-block;
+}
+
+#breadcrambs {
+padding-right:100px;
+padding-top:30px;
+}
+
+
+/*--------------------יצירת חצים בברד קראמבס --------------------*/
+ol li.nav:after {
+    content: " >>";
+}
+
+ol li.nav:last-child:after {
+    content: "";
+}
+
+/*מעבר עכבר לסרגל ניווט ראשי+ ברד קראמבס*/
+.nav:link {
+    color: black;
+    text-decoration: none;
+}
+
+a.nav:hover {
+    background-image: url('../images/underline/under-line-01.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.nav:active{
+    font-weight:600;
+}
+
+.nav:visited {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*לוגו האתר*/
+
+img#logo {
+    display: inline-block;
+    position: fixed;
+    width: 200px;
+    height: 140px;
+    margin-top: -66px;
+    z-index: 2;
+}
+
+/*רקע לשורת ניווט עליונה*/
+ul#upperNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: ghostwhite;
+    width: 100%;
+    height: 61px;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    font-size: 16pt;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    padding-right: 0px;
+}
+
+/* --------------------- סימון קישור של העמוד שנמצאים בו כרגע ----------------------------*/
+
+.UrHere {
+    font-weight: 600;
+}
+
+
+/*---------------- כפתור "דלג לתוכן -----------------------------"*/
+#contentA {
+    text-align: center;
+    border: solid 1px #663333;
+    background-color: white;
+    margin-top: 49px;
+    margin-right: 1362px;
+    width: 130px;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 2;
+    font-size: 12pt;
+}
+
+#content:link {
+    color: black;
+    text-decoration: none;
+}
+
+#content:active {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+#content:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+.font {
+    font-family: 'Gveret Levin AlefAlefAlef';
+}
+/*הגדרות כלליות לכפתורים*/
+.button {
+    background-color: #663333;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    width: 158px;
+    height: 35px;
+    margin: 20px auto 5px auto;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.19);
+}
+
+    .button:hover {
+        font-size: 16pt;
+
+    }
+
+    .button:active {
+        font-size: 16pt;
+        box-shadow: none;
+    }
+
+
+
+
+
+/*------------------------------------- תוכן ----------------------------------------------*/
+
+header {
+    text-align: center;
+
+}
+
+#firsth1{
+    font-size: 70pt;
+    margin:0px;
+}
+
+#firsth2 {
+    margin: 5px 0px 0px 0px;
+}
+
+
+
+/*--תמונות רקע---*/
+
+
+aside div {
+    width: 109px;
+    height: 24px;
+}
+    aside div > img {
+        position: relative;
+    }
+
+#spoon_pic_1 {
+    transform: rotate( -5deg );
+    bottom: 1700px;
+    right: 111px;
+}
+
+#knife_pic {
+    transform: rotate( -5deg );
+    bottom: 1118px;
+    right: 1057px;
+}
+#first_arrow {
+    bottom: 669px;
+    right: 519px;
+}
+#second_arrow {
+    bottom: 168px;
+    right: 583px;
+}
+#fork_pic {
+    bottom: 620px;
+    right: -21px;
+}
+#small-knife {
+    bottom: 158px;
+    right: 873px;
+    transform: rotate( -5deg );
+}
+
+/*---------------------- חלק אמצעי - תמונות + כפתורים -------------------------------*/
+#middleSec {
+    text-align: center;
+    margin-top: 106px;
+}
+
+#wrappingDiv {
+    width: 862px;
+    height: 1523px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.foodIMG {
+    width: 410px;
+    height: 410px;
+}
+
+.centerDIV{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    display: inline-block;
+}
+
+.buttonLink:link {
+    color: white;
+    text-decoration: none;
+}
+
+.buttonLink:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#recommended {
+    position: relative;
+    bottom: 560px;
+    right: 636px;
+    font-size: 16pt;
+}
+
+/*---------------------------------------פוטר-------------------------------------*/
+footer {
+    background-color: #D9C1C1;
+    text-align: center;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    width: 100%;
+    height: 74px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#bottomUl {
+    margin: 0 auto;
+    padding-right: 326px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 110px;
+}
+
+    #bottomUl > li {
+        padding-left: 72px;
+        font-size: 14pt;
+    }
+/*    --- מיקום של זכויות יוצרים ----------*/
+#left {
+    margin-left: 23px;
+    font-size: 10pt;
+}
+/*אייקונים- פייסבוק, ואטסאפ, אינסטגרם*/
+#iconsALL {
+    float: right;
+    margin-right: 59px;
+}
+
+.icons:link {
+    text-decoration: none;
+}
+
+.icons:active {
+    text-decoration: none;
+}
+
+.icons:visited {
+    text-decoration: none;
+}
+
+#iconsALL > a > img {
+    width: 20px;
+    height: 20px;
+}
+
+#iconsALL > a:last-child > img {
+    width: 22px;
+    height: 22px;
+}

@@ -1,0 +1,132 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <link rel="icon" href="images/Favicon/chef-hat-309146_1280.png" />
+    <meta charset="utf-8" />
+    <title>צור קשר - 10 בבישול</title>
+    <meta name="description" content="עמוד צור קשר של אתר 10 בבישול" />
+    <meta name="keywords" content="צור קשר,10 בבישול,מתכונים קלים, בעיות ומענות" />
+    <meta name="author" content="סטודנטיות בטכנולוגיות למידה- המכון הטכנולוגי חולון- נוי מונסונגו, לירז אסידו, יובל גרינבלט ונדר ונטורה" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/contactUs.css" rel="stylesheet" />
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="contentA"><a href="#h1" id="content">דלג לתוכן העמוד</a></div>
+        <nav aria-label="תפריט ראשי עליון">
+            <a href="../index.html"><img id="logo" src="images/לוגו-10בבישול-שחור.png" alt="לוגו האתר- קישור לדף הבית" title="לוגו האתר- קישור לדף הבית" /></a>
+            <ul id="upperNav">
+                <li class="nav1 spcecialNAV"><a href="../index.html" class="nav" id="UrHere">בית</a></li>
+                <li class="nav1">
+                    <span class="nav" id="recipes">מתכונים</span>
+                    <ul id="insideRecipes">
+                        <li class="nav"><a href="../inside.Pita.html" class="nav">הכל בפיתה</a></li>
+                        <li class="notActive">מנות חלוקה</li>
+                        <li class="notActive">מאנצ'ים</li>
+                        <li class="notActive">ארוחה שלמה - מראשונה ועד קינוח</li>
+                    </ul>
+                </li>
+                <li class="notActive nav1">
+                    טיפים
+                    <ul id="insideTips">
+                        <li class="notActive">טיפים כלליים</li>
+                        <li class="notActive">טיפים לשימוש עם סכין</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="mainContent">
+                <nav>
+                    <ol class="font makePad" id="breadCrambs" aria-label="אתה נמצא בעמוד צור קשר">
+                        <li class="nav nav1"><a href="../index.html" class="nav">דף הבית</a></li>
+                        <li class="notActive">צור קשר</li>
+                    </ol>
+                </nav>
+                <form aria-label="טופס צור קשר" action="mailto:yourMail@gmail.com">
+                    <div><a name="h1"></a></div>
+                    <h1 class="font">צרו איתנו קשר</h1>
+                    <h2 class="font">מלאו את הטופס ונחזור אליכם בהקדם האפשרי.. מבטיחות !</h2>
+                    <p id="must">* שדה חובה</p>
+                    <div id="name">
+                        <label for="fullName" required>
+                            <span class="spanInside">* שם מלא:</span>
+                            <input type="text" required aria-required="true" id="fullName" name="allname" placeholder="הכנס שם פרטי ומשפחה" />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email" required>
+                            <span class="spanInside">* דואר אלקטרוני:</span>
+                            <input type="email" id="YourMail" placeholder="הזן דואר אלקטרוני" name="mail" required aria-required="true" />
+                        </label>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend><span class="required spanInside"> מגדר:</span></legend>
+                            <label for="male">
+                                <input type="radio" id="male" name="gender" checked /> זכר
+                            </label>
+                            <label for="female">
+                                <input type="radio" id="female" name="gender" /> נקבה
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <label for="myMS" aria-required="true">
+                            <span class="spanInside">* רשום את הודעתך: </span>
+                            <textarea id="myMS" placeholder="הזן תוכן" name="notes" required aria-required="true"></textarea>
+                        </label>
+                    </div>
+                    <input type="submit" id="Send" value="שלח" class="button" />
+
+                    <div id="feedback"></div>
+                </form>
+
+                <!------תמונות רקע ללא משמעות ------->
+                <div class="BGdiv">
+                    <img src="images/image-inside.pita/spoon_insidePita-01.png" alt="" id="spoon-pic" />
+                </div>
+                <div class="BGdiv">
+                    <img src="images/index-pics/first_fork_homeP-01.png" alt="" id="fork-pic" />
+                </div>
+                <div class="BGdiv">
+                    <img src="images/lineDrawingsBG/small_knife-01.png" alt="" id="knife-pic" />
+                </div>
+                <div class="BGdiv">
+                    <img src="images/arrows/first_arrow_forIndex-01.png" alt="" id="arrow" />
+                </div>
+                <!-------------------------------->
+
+
+            </div>
+        </main>
+        <footer>
+            <span id="iconsALL">
+                <a href="https://www.facebook.com/" target="_blank" class="icons">
+                    <img src="images/image-footer/facebook-for-footer-01.png" alt="קישור לפייסבוק" />
+                </a>
+                <a href="https://web.whatsapp.com/" target="_blank" class="icons">
+                    <img src="images/image-footer/whatsapp-footer-01.png" alt="קישור לואטסאפ" />
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="icons">
+                    <img src="images/image-footer/instagram-footer-01.png" alt="קישור לאינסטגרם" />
+                </a>
+            </span>
+            <nav>
+                <ul id="bottomUl">
+                    <li class="nav spcecialNAV"><a href="../about.html" class="nav">אודות</a></li>
+                    <li><a href="../contactUs.html" class="nav" id="UrHere">צור קשר</a></li>
+                    <li><a href="siteMap.html" class="nav" >מפת האתר</a></li>
+                </ul>
+            </nav>
+            <span id="left">10 בבישול 2021 Ⓒ</span>
+        </footer>
+    </div>
+</body>
+</html>

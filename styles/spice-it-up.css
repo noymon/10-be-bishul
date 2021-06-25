@@ -1,0 +1,329 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'GveretLevinAlefAlefAlef-Regular';
+    src: url('../font/GveretLevinAlefAlefAlef-Regular.ttf') format('truetype');
+}
+
+body {
+    direction: rtl;
+    background-image: url('../images/background/background-squares-01.png');
+    background-color: #EDEDED;
+    font-family: Rubik;
+    margin: 0 auto;
+    font-size: 16pt;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1280px;
+    display: contents;
+}
+
+#mainContent {
+    background-color: #F4F2EF;
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    font-family: Rubik;
+    padding-top: 78px;
+    font-size: 14pt;
+}
+
+/*----------------- קישורים שאינם פעילים ------------------*/
+.notActive {
+    cursor: not-allowed;
+    color: grey;
+}
+
+/*לוגו האתר*/
+
+img#logo {
+    display: inline-block;
+    position: fixed;
+    width: 200px;
+    height: 140px;
+    margin-top: -65px;
+    z-index: 2;
+}
+
+/*רקע לשורת ניווט עליונה*/
+ul#upperNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: ghostwhite;
+    width: 100%;
+    height: 61px;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    font-size: 16pt;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    padding-right: 0px;
+    margin-top: 0px;
+}
+
+
+/*---------------- כפתור "דלג לתוכן -----------------------------"*/
+#contentA {
+    text-align: center;
+    border: solid 1px #663333;
+    background-color: white;
+    margin-top: 51px;
+    margin-right: 1362px;
+    width: 130px;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 2;
+    font-size: 12pt;
+}
+
+#content:link {
+    color: black;
+    text-decoration: none;
+}
+
+#content:active {
+    text-decoration: none;
+    color: black;
+}
+
+#content:visited {
+    text-decoration: none;
+    color: black;
+}
+/*----------------------------תפריט ניווט נפתח מתוך המתכונים -----------------------*/
+#insideRecipes {
+    display: none;
+    position: absolute;
+    margin-right: -44px;
+    margin-top: 430px;
+    width: 257px;
+    height: 343px;
+    list-style: none;
+    border-radius: 25px;
+    background-color: ghostwhite;
+    text-align: right;
+}
+
+    #insideRecipes li {
+        padding-top: 40px;
+    }
+/*    -------פתיחת תת תפריט של מתכונים -----*/
+#upperNav li:hover #insideRecipes, #upperNav li:focus #insideRecipes {
+    display: block;
+}
+/*----------------------------תפריט ניווט נפתח מתוך הטיפים -----------------------*/
+#insideTips {
+    display: none;
+    position: absolute;
+    margin-right: -44px;
+    margin-top: 242px;
+    width: 257px;
+    height: 155px;
+    list-style: none;
+    border-radius: 25px;
+    background-color: ghostwhite;
+    text-align: right;
+}
+
+    #insideTips li {
+        padding-top: 40px;
+        padding-right: 40px;
+    }
+/*    -------פתיחת תת תפריט של טיפים -----*/
+#upperNav li:hover #insideTips, #upperNav li:focus #insideTips {
+    display: block;
+}
+
+/*הגדרות סרגל ניווט ראשי+ ברד קראמבס*/
+ul#upperNav > li {
+    margin: 5px 40px;
+    list-style-type: none;
+    height: 100px;
+}
+
+ul#insideRecipes > li {
+    margin: 5px 40px;
+    list-style-type: none;
+}
+
+li.nav1 {
+    display: flex;
+    align-items: center;
+}
+
+/*יצירת סרגל ניווט ראשי+ ברד קראמבס*/
+ol#breadCrambs > li {
+    display: inline-block;
+}
+
+nav #breadCrambs li {
+    list-style: none;
+    display: inline-block;
+}
+
+/*הגדרות לברד קראמבס*/
+#breadCrambs {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    list-style: none;
+    margin-right: 100px;
+    font-size: 14pt;
+}
+/*--------------------יצירת חצים בברד קראמבס --------------------*/
+ol li.nav:after {
+    content: " >>";
+}
+
+ol li.nav:last-child:after {
+    content: "";
+}
+
+
+/*מעבר עכבר לסרגל ניווט ראשי+ ברד קראמבס*/
+
+.nav:link {
+    color: black;
+    text-decoration: none;
+}
+
+a.nav:hover {
+    background-image: url('../images/underline/under-line-01.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.nav:active {
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.nav:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/*החלת פונט גברת בחלקים נבחרים*/
+.font {
+    font-family: 'Gveret Levin AlefAlefAlef';
+}
+
+                            /*------------------------------------ תוכן -----------------------------------------------*/
+/*-------------ייצוג אינטראקטיבי ----------------------*/
+h1 {
+    font-size:42pt;
+    color: #663333;
+    margin:30px 100px 0px 30px;
+}
+h2,p{
+    margin-right:100px;
+}
+h2{
+    font-size:18pt;
+    font-weight:600;
+    margin-top:10px;
+}
+p {
+    font-size: 16pt;
+    font-weight:400;
+    margin-top:3px;
+}
+/*---------------תמונות רקע - ללא משמעות --------------*/
+.BGdiv {
+    width: 10px;
+    height: 30px;
+    white-space: nowrap;
+}
+
+    .BGdiv > img {
+        position: relative;
+    }
+
+#spoon-pic {
+    right: 14px;
+    top: 10px;
+    transform: rotate( -78deg );
+}
+
+#fork-pic {
+    right: 1076px;
+    top: -186px;
+    transform: rotate( -143deg );
+}
+
+#knife-pic {
+    right: 11px;
+    top: -25px;
+    transform: rotate( -64deg );
+}
+
+#arrow {
+    right: 694px;
+    top: -179px;
+    transform: rotate( 263deg );
+}
+
+/*---------------------------------------פוטר-------------------------------------*/
+footer {
+    background-color: #D9C1C1;
+    text-align: center;
+    font-family: 'Gveret Levin AlefAlefAlef';
+    width: 100%;
+    height: 74px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#bottomUl {
+    margin: 0 auto;
+    padding-right: 326px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 110px;
+}
+
+    #bottomUl > li {
+        padding-left: 72px;
+        font-size: 14pt;
+    }
+/*    --- מיקום של זכויות יוצרים ----------*/
+#left {
+    margin-left: 23px;
+    font-size: 10pt;
+}
+/*אייקונים- פייסבוק, ואטסאפ, אינסטגרם*/
+#iconsALL {
+    float: right;
+    margin-right: 59px;
+}
+
+.icons:link {
+    text-decoration: none;
+}
+
+.icons:active {
+    text-decoration: none;
+}
+
+.icons:visited {
+    text-decoration: none;
+}
+
+#iconsALL > a > img {
+    width: 20px;
+    height: 20px;
+}
+
+#iconsALL > a:last-child > img {
+    width: 22px;
+    height: 22px;
+}
