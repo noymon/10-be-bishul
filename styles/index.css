@@ -3,6 +3,9 @@
     font-family: 'GveretLevinAlefAlefAlef-Regular';
     src: url('../font/GveretLevinAlefAlefAlef-Regular.ttf') format('truetype');
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     direction: rtl;
     background-image: url('../images/background/background-squares-01.png');
