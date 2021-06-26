@@ -10,7 +10,7 @@ body {
     direction: rtl;
     background-image: url('../images/background/background-squares-01.png');
     background-color: #EDEDED;
-/*    font-family: Rubik, sans-serif;*/
+    font-family: Rubik, sans-serif;
     margin: 0 auto;
     font-size: 16pt;
 }
