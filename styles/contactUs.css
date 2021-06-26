@@ -3,6 +3,9 @@
     font-family: 'GveretLevinAlefAlefAlef-Regular';
     src: url('../font/GveretLevinAlefAlefAlef-Regular.ttf') format('truetype');
 }
+html { /*----יצירת גלילה חלקה של המסך----*/
+    scroll-behavior: smooth;
+}
 body {
     direction: rtl;
     background-image: url('../images/background/background-squares-01.png');
@@ -17,7 +20,7 @@ body {
     width: 1280px;
     display: contents;
 }
-
+/*------עוטף את כל החלק של התוכן-----*/
 #mainContent {
     background-color: #F4F2EF;
     width: 1280px;
@@ -138,7 +141,7 @@ ul#upperNav {
     display: block;
 }
 
-/*הגדרות סרגל ניווט ראשי+ ברד קראמבס*/
+/*-------------הגדרות סרגל ניווט ראשי+ ברד קראמבס----------*/
 ul#upperNav > li {
     margin: 5px 40px;
     list-style-type: none;
@@ -157,8 +160,32 @@ li.nav1 {
     align-items: center;
 }
 
+/*------------------מעבר עכבר לסרגל ניווט ראשי+ ברד קראמבס-----------------*/
 
-/*יצירת סרגל ניווט ראשי+ ברד קראמבס*/
+.nav:link {
+    color: black;
+    text-decoration: none;
+}
+/*---------------------תמונה של הקו התחתון מתחת לקישורים -------------------*/
+a.nav:hover {
+    background-image: url('../images/underline/under-line-01.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.nav:active {
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.nav:visited {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*--------------הגדרות ברד קראמבס--------------*/
 ol#breadCrambs > li {
     display: inline-block;
 }
@@ -184,29 +211,7 @@ ol li.nav:after {
 ol li.nav:last-child:after {
     content: "";
 }
-/*מעבר עכבר לסרגל ניווט ראשי+ ברד קראמבס*/
 
-.nav:link {
-    color: black;
-    text-decoration: none;
-}
-/*---------------------תמונה של הקו התחתון מתחת לקישורים -------------------*/
-a.nav:hover {
-    background-image: url('../images/underline/under-line-01.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-.nav:active {
-    font-weight: 600;
-    color: black;
-    text-decoration: none;
-}
-
-.nav:visited {
-    color: black;
-    text-decoration: none;
-}
 
 /* --------------------- סימון קישור של העמוד שנמצאים בו כרגע ----------------------------*/
 
@@ -247,7 +252,7 @@ a.nav:hover {
 }
 
 
-/*-------------------------------------- הגדרות תוכן ------------------------------------------*/
+                        /*-------------------------------------- הגדרות תוכן ------------------------------------------*/
 
 /*ריווח לטופס*/
 form {
@@ -289,12 +294,12 @@ div .spanInside{
         font-family: Rubik;
     }
 
-
+/*    ----הגדרות אינפוט טקסט----*/
 div  > label > input {
     width:150px;
     height:20px;
 }
-
+/*------- תיבת טקסט לכתיבת תוכן ההודעה של הטופס---*/
 textarea {
     width:600px;
     height:200px;
@@ -336,8 +341,8 @@ input#male {
 
 #knife-pic {
     right: 1016px;
-    top: -94px;
-    transform: rotate( 269deg );
+    top: 9px;
+    transform: rotate( 309deg );
 }
 
 #arrow {
@@ -346,7 +351,26 @@ input#male {
     transform: rotate( 3deg );
 }
 
-
+#big-phone {
+    right: 705px;
+    top: -167px;
+    transform: rotate( 60deg );
+}
+#small-phone {
+    right: 935px;
+    top: -738px;
+    transform: rotate( 3deg );
+}
+#big-envelope {
+    right: 537px;
+    top: -1021px;
+    transform: rotate( -3deg )
+}
+#small-envelope {
+    right: 1111px;
+    top: -496px;
+    transform: rotate( 40deg );
+}
 
 
 /*---------------------------------------פוטר-------------------------------------*/
@@ -362,7 +386,7 @@ footer {
     align-items: center;
 }
 
-
+/*------תפריט ניווט תחתון-----*/
 #bottomUl {
     margin: 0 auto;
     padding-right: 326px;
@@ -403,7 +427,7 @@ footer {
     width: 20px;
     height: 20px;
 }
-
+/*------יצירת אייקון אינסטגרם קצת יותר גדול--*/
 #iconsALL > a:last-child > img {
     width: 22px;
     height: 22px;

@@ -3,6 +3,9 @@
     font-family: 'GveretLevinAlefAlefAlef-Regular';
     src: url('../font/GveretLevinAlefAlefAlef-Regular.ttf') format('truetype');
 }
+html { /*----יצירת גלילה חלקה של המסך----*/
+    scroll-behavior: smooth;
+}
 body {
     direction: rtl;
     background-image: url('../images/background/background-squares-01.png');
@@ -17,7 +20,7 @@ body {
     width: 1280px;
     display: contents;
 }
-
+/*------עוטף את כל החלק של התוכן-----*/
 #mainContent {
     background-color: #F4F2EF;
     width: 1280px;
@@ -35,7 +38,6 @@ body {
 }
 
 /*לוגו האתר*/
-
 img#logo {
     display: inline-block;
     position: fixed;
@@ -65,7 +67,7 @@ ul#upperNav {
 }
 
 
-/*---------------- כפתור "דלג לתוכן -----------------------------"*/
+/*---------------- כפתור "דלג לתוכן" -----------------------------*/
 #contentA {
     text-align: center;
     border: solid 1px #663333;
@@ -154,7 +156,31 @@ li.nav1 {
     align-items: center;
 }
 
-/*יצירת סרגל ניווט ראשי+ ברד קראמבס*/
+/*מעבר עכבר לסרגל ניווט ראשי+ ברד קראמבס*/
+
+.nav:link {
+    color: black;
+    text-decoration: none;
+}
+
+a.nav:hover {
+    background-image: url('../images/underline/under-line-01.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.nav:active {
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.nav:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/*--------------הגדרות ברד קראמבס--------------*/
 ol#breadCrambs > li {
     display: inline-block;
 }
@@ -182,29 +208,6 @@ ol li.nav:last-child:after {
 }
 
 
-/*מעבר עכבר לסרגל ניווט ראשי+ ברד קראמבס*/
-
-.nav:link {
-    color: black;
-    text-decoration: none;
-}
-
-a.nav:hover {
-    background-image: url('../images/underline/under-line-01.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-.nav:active {
-    font-weight: 600;
-    color: black;
-    text-decoration: none;
-}
-
-.nav:visited {
-    color: black;
-    text-decoration: none;
-}
 
 /* --------------------- סימון קישור של העמוד שנמצאים בו כרגע ----------------------------*/
 
@@ -244,7 +247,7 @@ a.nav:hover {
     font-family: 'Gveret Levin AlefAlefAlef';
 }
 
-/*-------------------------------------- תוכן  ----------------------------------------------*/
+                             /*-------------------------------------- תוכן  ----------------------------------------------*/
 
 /*-----הגדרות של כותרות------*/
 h1,h2,h3{
@@ -264,7 +267,7 @@ h3 {
 }
 
 
-/*----הגדרות כלליות-----*/
+/*----- הגדרות כלליות - ריווחים, צבע טקסט, קישורים..-----*/
 section {
     width: 1000px;
     margin-bottom: 20px;
@@ -281,7 +284,7 @@ section {
             color: #663333;
         }
 
-/*----הגדרות של החלק הצבוע בצהוב-----*/
+/*----הגדרות של החלק הצבוע בורוד-----*/
 #bgColor {
     background-color: #D9C1C1;
     border-radius: 17px;
@@ -321,6 +324,7 @@ section ul li {
     list-style: none;
     margin-bottom:3px;
 }
+
 /*-------הגדרות לתמונות של צוות הפרויקט -------*/
 #group-pics {
     margin: 73px 100px 0px 0px;
@@ -343,7 +347,7 @@ section ul li {
 }
 
 
-/*------הגדרות של הפסקה עם הלוגו בתחתית העמוד-----*/
+/*------הגדרות של הפיסקה עם הלוגו בתחתית העמוד-----*/
 #last {
     margin-top: 100px;
     display: flex;
@@ -405,7 +409,7 @@ footer {
     align-items: center;
 }
 
-
+/*------תפריט ניווט תחתון-----*/
 #bottomUl {
     margin: 0 auto;
     padding-right: 326px;
@@ -446,7 +450,7 @@ footer {
     width: 20px;
     height: 20px;
 }
-
+/*------יצירת אייקון אינסטגרם קצת יותר גדול--*/
 #iconsALL > a:last-child > img {
     width: 22px;
     height: 22px;

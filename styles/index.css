@@ -3,7 +3,7 @@
     font-family: 'GveretLevinAlefAlefAlef-Regular';
     src: url('../font/GveretLevinAlefAlefAlef-Regular.ttf') format('truetype');
 }
-html {
+html {/*----יצירת גלילה חלקה של המסך----*/
     scroll-behavior: smooth;
 }
 body {
@@ -20,7 +20,7 @@ body {
     width: 1280px;
     display: contents;
 }
-
+/*------עוטף את כל החלק של התוכן-----*/
 #mainContent {
     width: 1280px;
     height: 100%;
@@ -140,7 +140,7 @@ ul#upperNav {
     display: block;
 }
 
-/*הגדרות סרגל ניווט ראשי+ ברד קראמבס*/
+/*-------------הגדרות סרגל ניווט ראשי+ ברד קראמבס----------*/
  ul#upperNav > li {
     margin: 5px 40px;
     list-style-type:none;
@@ -157,7 +157,7 @@ li.nav1 {
     align-items: center;
 }
 
-/*מעבר עכבר לסרגל ניווט ראשי+ ברד קראמבס*/
+/*------------------מעבר עכבר לסרגל ניווט ראשי+ ברד קראמבס-----------------*/
 
     .nav:link {
         color: black;
@@ -270,7 +270,7 @@ a.nav:hover {
 .scroll-down-wrapper {
     animation: MoveUpDown 4s linear infinite;
 }
-
+/*----------------- יצירת הפעולה של התזוזה ------*/
 @keyframes MoveUpDown {
     10% {
         bottom: 100px;
@@ -387,14 +387,14 @@ section > div#pot {
 #lastSec {
     width: 1319px;
     height: 669px;
-    margin-top: -76px;
+    margin-top: -111px;
     margin-right: -120px;
-    padding: 140px 150px 60px 0px;
+    padding: 140px 150px 30px 0px;
 }
 
 #thirdh1 {
     font-size: 50pt;
-    margin-bottom: 38px;
+    margin-bottom: 15px;
     font-weight: 800;
 }
 /*------ הגדרות של התמונות בקרוסלה----------*/
@@ -407,14 +407,6 @@ section > div#pot {
     background-size: contain;
     position: relative;
     justify-content: center;
-    opacity: 1;
-}
-no-display{
-    opacity: 0 !important;
-    height: 0 !important;
-}
-
-yes-display{
     opacity: 1;
 }
 
@@ -444,6 +436,7 @@ yes-display{
     border-radius: 50%;
     display: inline-block;
     margin-left: 46px;
+    cursor: pointer;
 }
 
 /*------הגדרות של הנקודות מעבר של הקרוסלה -----*/
@@ -451,7 +444,7 @@ yes-display{
     display: flex;
     width: 96%;
     justify-content: center;
-    margin-top: 199px;
+    margin-top: 175px;
 }
 
 .dot-active {
@@ -543,7 +536,7 @@ footer {
     align-items: center;
 }
 
-
+/*------תפריט ניווט תחתון-----*/
 #bottomUl {
     margin: 0 auto;
     padding-right: 326px;
@@ -586,7 +579,7 @@ footer {
     width: 20px;
     height: 20px;
 }
-
+/*------יצירת אייקון אינסטגרם קצת יותר גדול--*/
 #iconsALL > a:last-child > img {
     width: 22px;
     height: 22px;

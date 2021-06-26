@@ -3,6 +3,9 @@
     font-family: 'GveretLevinAlefAlefAlef-Regular';
     src: url('../font/GveretLevinAlefAlefAlef-Regular.ttf') format('truetype');
 }
+html { /*----יצירת גלילה חלקה של המסך----*/
+    scroll-behavior: smooth;
+}
 body {
     direction: rtl;
     background-image: url('../images/background/background-squares-01.png');
@@ -16,7 +19,7 @@ body {
     width: 1280px;
     display: contents;
 }
-
+/*------עוטף את כל החלק של התוכן-----*/
 #mainContent {
     background-color: #F4F2EF;
     width: 1280px;
@@ -79,7 +82,7 @@ body {
     display: block;
 }
 
-/*הגדרות סרגל ניווט ראשי+ ברד קראמבס*/
+/*----------------הגדרות סרגל ניווט ראשי+ ברד קראמבס--------------------*/
 ul#upperNav > li {
     margin: 5px 40px;
     font-size: 16pt;
@@ -96,28 +99,8 @@ li.nav1 {
     align-items: center;
 }
 
-/*-----------הגדרות פירורי לחם -----*/
-nav ol li {
-    list-style: none;
-    display: inline-block;
-}
 
-#breadcrambs {
-padding-right:100px;
-padding-top:30px;
-}
-
-
-/*--------------------יצירת חצים בברד קראמבס --------------------*/
-ol li.nav:after {
-    content: " >>";
-}
-
-ol li.nav:last-child:after {
-    content: "";
-}
-
-/*מעבר עכבר לסרגל ניווט ראשי+ ברד קראמבס*/
+/*------------------מעבר עכבר לסרגל ניווט ראשי+ ברד קראמבס-----------------*/
 .nav:link {
     color: black;
     text-decoration: none;
@@ -137,7 +120,26 @@ a.nav:hover {
     color: black;
     text-decoration: none;
 }
+/*--------------הגדרות ברד קראמבס--------------*/
+nav ol li {
+    list-style: none;
+    display: inline-block;
+}
 
+#breadcrambs {
+padding-right:100px;
+padding-top:30px;
+}
+
+
+/*-------יצירת חצים בברד קראמבס ------*/
+ol li.nav:after {
+    content: " >>";
+}
+
+ol li.nav:last-child:after {
+    content: "";
+}
 
 /*לוגו האתר*/
 
@@ -237,7 +239,7 @@ ul#upperNav {
 
 
 
-/*------------------------------------- תוכן ----------------------------------------------*/
+                             /*------------------------------------- תוכן ----------------------------------------------*/
 
 header {
     text-align: center;
@@ -295,7 +297,7 @@ aside div {
     transform: rotate( -5deg );
 }
 
-/*---------------------- חלק אמצעי - תמונות + כפתורים -------------------------------*/
+                          /*---------------------- חלק אמצעי - תמונות + כפתורים -------------------------------*/
 #middleSec {
     text-align: center;
     margin-top: 106px;
@@ -354,7 +356,7 @@ footer {
     align-items: center;
 }
 
-
+/*------תפריט ניווט תחתון-----*/
 #bottomUl {
     margin: 0 auto;
     padding-right: 326px;
@@ -395,7 +397,7 @@ footer {
     width: 20px;
     height: 20px;
 }
-
+/*------יצירת אייקון אינסטגרם קצת יותר גדול--*/
 #iconsALL > a:last-child > img {
     width: 22px;
     height: 22px;

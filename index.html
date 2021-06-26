@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="he">
 <head>
-    <link rel="icon" href="images/Favicon/chef-hat-309146_1280.png" />
+    <link rel="icon" href="images/Favicon/chef-hat-309146_1280.png" alt=""/>
     <meta charset="utf-8" />
     <title>דף הבית - 10 בבישול</title>
     <meta name="description" content="דף הבית של אתר 10 בבישול" />
@@ -27,7 +27,6 @@
             <ul id="upperNav">
                 <li class="nav1 spcecialNAV"><a href="index.html" class="nav" id="UrHere">בית</a></li>
                 <li class="nav1">
-                    <!--------להחזיר את זה ל-לא קישור , אם לא נצליח לפתור את העניין עם הטאב------>
                     <span id="recipes" class="nav">מתכונים</span>
                     <ul id="insideRecipes">
                         <li class="nav"><a href="inside.Pita.html" class="nav">הכל בפיתה</a></li>
@@ -47,8 +46,6 @@
         </nav>
         <main>
             <div id="mainContent">
-
-
                 <header id="firstSec">
                     <div id="firstDIV" title="קרדיט לתמונת הרקע שעוצבה על ידי: lifeforstock/ Freepik">
                         <div><a name="h1" aria-hidden="true"></a></div>
@@ -76,7 +73,7 @@
                     <div class="scroll-down-wrapper"> 
                         <a href="#tips"><img src="images/index-pics/go_down-01.png" class="arrow-down" alt="חץ שבלחיצה עובר להמשך הדף" /></a>
                     </div>
-
+                    <!--------------------------------------------->
                 </header>
 
                 <!--קישור מהחץ הזז-->
@@ -95,7 +92,7 @@
                 <section id="lastSec" title="המתכונים המהירים שלנו">
                     <h1 id="thirdh1">המתכונים המהירים שלנו</h1>
 
-                    <!--------  קרוסלת התמונות שבתחתית עמוד הבית + שילוב של ג'בה סקריפט ------'-->
+                    <!--------  קרוסלת התמונות שבתחתית עמוד הבית + שילוב של ג'בה סקריפט -------->
                     <figure> 
                         <div class="image-slider-wrapper">
                             <div id="sliderImage1" class="foodIMG pita-zaatar-for-index" aria-labelledby="image-slider-text image-description1 slider-button1">
@@ -121,21 +118,21 @@
                             </div>
                         </div>
                     </figure>
-
-                    <div class="dots-wrapper">
-                        <span id="dot1" class="dot dot-active" onclick="dotClicked(1)"></span>
-                        <span id="dot2" class="dot dot2" onclick="dotClicked(2)"></span>
-                        <span id="dot3" class="dot dot3" onclick="dotClicked(3)"></span>
+                    <!----------------נקודות של הקרוסלה--------------->
+                    <div class="dots-wrapper" >
+                        <span id="dot1" class="dot dot-active" onclick="dotClicked(1)" aria-label="כפתור ימני להצגת 3 מנות"></span>
+                        <span id="dot2" class="dot dot2" onclick="dotClicked(2)" aria-label="כפתור אמצעי להצגת 3 מנות"></span>
+                        <span id="dot3" class="dot dot3" onclick="dotClicked(3)" aria-label="כפתור שמאלי להצגת 3 מנות"></span>
                     </div>
+                    <!----------------תמונות ללא משמעות -------------->
                     <div class="drawDiv">
                         <img src="images/index-pics/first_fork_homeP-01.png" alt="" id="last_fork" />
                     </div>
                     <div class="drawDiv">
                         <img src="images/arrows/bottom_homeP_arrow-01.png" alt="" id="bottomArrow"/>
                     </div>
+                    <!------------------------->
                 </section>
-
-
             </div>
         </main>
         <footer>
@@ -150,7 +147,7 @@
                     <img src="images/image-footer/instagram-footer-01.png" alt="קישור לאינסטגרם" />
                 </a>
             </span>
-            <nav>
+            <nav aria-label="תפריט ניווט תחתון">
                 <ul id="bottomUl">
                     <li class="nav spcecialNAV"><a href="about.html" class="nav">אודות</a></li>
                     <li><a href="contactUs.html" class="nav">צור קשר</a></li>

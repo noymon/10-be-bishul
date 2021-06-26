@@ -3,6 +3,9 @@
     font-family: 'GveretLevinAlefAlefAlef-Regular';
     src: url('../font/GveretLevinAlefAlefAlef-Regular.ttf') format('truetype');
 }
+html { /*----יצירת גלילה חלקה של המסך----*/
+    scroll-behavior: smooth;
+}
 body {
     direction: rtl;
     background-image: url('../images/background/background-squares-01.png');
@@ -17,7 +20,7 @@ body {
     width: 1280px;
     display: contents;
 }
-
+/*------עוטף את כל החלק של התוכן-----*/
 #mainContent {
     background-color: #F4F2EF;
     width: 1280px;
@@ -138,7 +141,7 @@ li.nav1 {
 
 
 
-/*---------------- כפתור "דלג לתוכן -----------------------------"*/
+/*---------------- כפתור "דלג לתוכן -----------------------------*/
 #contentA {
     text-align: center;
     border: solid 1px #663333;
@@ -170,7 +173,7 @@ li.nav1 {
 }
 
 
-/*יצירת סרגל ניווט ראשי+ ברד קראמבס*/
+/*--------------הגדרות ברד קראמבס--------------*/
 ol#breadCrambs > li {
     display: inline-block;
 }
@@ -277,8 +280,8 @@ aside#foodPic > div {
 
 /*---------------תמונות רקע - ללא משמעות --------------*/
 .BGdiv {
-    width: 150px;
-    height: 30px;
+    width: 5px;
+    height: 10px;
     white-space: nowrap;
 }
 
@@ -294,19 +297,19 @@ aside#foodPic > div {
 
 #fork-pic {
     right: 111px;
-    top: 842px;
+    top: 698px;
     transform: rotate( -45deg );
 }
 
 #knife-pic {
-    right: 683px;
-    top: 1485px;
+    right: 780px;
+    top: 1446px;
     transform: rotate( 24deg );
 }
 
 #arrow {
     right: 459px;
-    top: 1282px;
+    top: 1302px;
     transform: rotate( 24deg );
 }
 #smaller-fork {
@@ -347,7 +350,7 @@ h2 {
 }
 
 
-/*---------------------- פדינג לתוכן -----------------------*/
+/*------ פדינג לתוכן -----*/
 .makePad {
     padding-right: 100px;
 }
@@ -387,6 +390,7 @@ h2 {
     margin-top: 31px;
     font-size: 12pt;
 }
+
 /*---אייקונים שבתוך הריבועים הצהובים -------*/
 .yellowSqr > div > img {
     position: relative;
@@ -407,7 +411,7 @@ h2 {
     right: 75px;
 }
 
-/*----------------------- טופס צ'קבוקס -----------------------------------------------'*/
+                   /*----------------------- טופס צ'קבוקס -----------------------------------------------'*/
 #foodForm {
     display: inline-block;
     margin-left: -415px;
@@ -428,13 +432,13 @@ fieldset {
     margin: 15px 0px 15px 5px;
     font-size: 14pt;
 }
-/*--  תמונות סימני שאלה עם מעבר עכבר-------*/
+/*-- תמונות עם מעבר עכבר להצגת תמונות של המרכיבים-------*/
 .photo-icon {
     padding: 5px;
     left: 0;
     position: absolute;
 }
-/*-----------------------------------------------מעברי עכבר של המרכיבים- תמונות עגולות --------------------*/
+/*--------------------מעברי עכבר של המרכיבים- תמונות עגולות --------------------*/
 #cheese-pic, #pita-pic, #ketchup-pic {
     position: absolute;
     width: 171px;
@@ -525,7 +529,7 @@ input.check {
             transition: all 350ms cubic-bezier(1, 0, 0.37, 0.91);
         }
 
-
+/*-------סוף הגדרות עיצוב של צקבוקסים -----*/
 
 
 /*-----------כפתור שליחת מייל + הגדרות כפתור אחרון ----------------*/
@@ -589,10 +593,6 @@ iframe {
     height: 315px;
     border-radius: 10px;
 }
-
-
-
-
 
 /*    /----------------*טיפ בחלק התחתון של העמוד*--------------/*/
     h3#tip {
@@ -660,7 +660,7 @@ footer {
     align-items: center;
 }
 
-
+/*------תפריט ניווט תחתון-----*/
 #bottomUl {
     margin: 0 auto;
     padding-right: 326px;
@@ -701,7 +701,7 @@ footer {
     width: 20px;
     height: 20px;
 }
-
+/*------יצירת אייקון אינסטגרם קצת יותר גדול--*/
 #iconsALL > a:last-child > img {
     width: 22px;
     height: 22px;

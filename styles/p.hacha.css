@@ -3,6 +3,9 @@
     font-family: 'GveretLevinAlefAlefAlef-Regular';
     src: url('../font/GveretLevinAlefAlefAlef-Regular.ttf') format('truetype');
 }
+html { /*----יצירת גלילה חלקה של המסך----*/
+    scroll-behavior: smooth;
+}
 body {
     direction: rtl;
     background-image: url('../images/background/background-squares-01.png');
@@ -16,7 +19,7 @@ body {
     width: 1280px;
     display: contents;
 }
-
+/*------עוטף את כל החלק של התוכן-----*/
 #mainContent {
     background-color: #F4F2EF;
     width: 1280px;
@@ -118,7 +121,7 @@ ul#upperNav {
     display: block;
 }
 
-/*הגדרות סרגל ניווט ראשי+ ברד קראמבס*/
+/*----------------הגדרות סרגל ניווט ראשי+ ברד קראמבס--------------------*/
 ul#upperNav > li {
     margin: 5px 40px;
     list-style-type: none;
@@ -136,6 +139,62 @@ li.nav1 {
     display: flex;
     align-items: center;
 }
+
+
+/*------------------מעבר עכבר לסרגל ניווט ראשי+ ברד קראמבס-----------------*/
+.nav:link {
+    color: black;
+    text-decoration: none;
+}
+
+.nav:active {
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+a.nav:hover {
+    background-image: url('../images/underline/under-line-01.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.nav:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/*--------------הגדרות ברד קראמבס--------------*/
+ol#breadCrambs > li {
+    display: inline-block;
+}
+
+nav #breadCrambs li {
+    list-style: none;
+    display: inline-block;
+}
+
+/*הגדרות נוספות ברד קראמבס*/
+#breadCrambs {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    list-style: none;
+}
+
+/*------ מיקום ברד קראמבס ----------------------*/
+#breadCrambs{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+/*--------------------יצירת חצים בברד קראמבס --------------------*/
+ol li.nav:after {
+    content: " >>";
+}
+
+ol li.nav:last-child:after {
+    content: "";
+}
+
 
 /*---------------- כפתור "דלג לתוכן -----------------------------"*/
 #contentA {
@@ -164,66 +223,10 @@ li.nav1 {
     color: black;
 }
 
-/*יצירת סרגל ניווט ראשי+ ברד קראמבס*/
-ol#breadCrambs > li {
-    display: inline-block;
-}
-
-nav #breadCrambs li {
-    list-style: none;
-    display: inline-block;
-}
-
-/*הגדרות נוספות ברד קראמבס*/
-#breadCrambs {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    list-style: none;
-}
-
-/*מעבר עכבר לסרגל ניווט ראשי+ ברד קראמבס*/
-.nav:link {
-    color: black;
-    text-decoration: none;
-}
-
-.nav:active {
-    font-weight: 600;
-    color: black;
-    text-decoration: none;
-}
-
-a.nav:hover {
-    background-image: url('../images/underline/under-line-01.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-.nav:visited {
-    color: black;
-    text-decoration: none;
-}
-
-/*------ מיקום ברד קראמבס ----------------------*/
-#breadCrambs{
-    padding-top:30px;
-    padding-bottom:30px;
-}
-
-/*--------------------יצירת חצים בברד קראמבס --------------------*/
-ol li.nav:after {
-    content: " >>";
-}
-
-ol li.nav:last-child:after {
-    content: "";
-}
-
 /*----------------הכלת פונט על אלמנטים נבחרים------------------*/
 .font {
     font-family: 'Gveret Levin AlefAlefAlef';
 }
-
-
 
 /*הגדרות כלליות לכפתורים*/
 .button {
@@ -252,7 +255,6 @@ ol li.nav:last-child:after {
 aside#foodPic {
     display: flex;
     justify-content: center;
-/*    margin-top: 70px;*/
     margin-right: -101px;
 }
 
@@ -283,10 +285,10 @@ aside#foodPic {
 }
 
 /*---------------תמונות רקע --------------*/
-.BGdiv{
-width:10px;
-height:30px;
-white-space:nowrap;
+.BGdiv {
+    width: 10px;
+    height: 10px;
+    white-space: nowrap;
 }
 
     .BGdiv > img {
@@ -300,23 +302,42 @@ white-space:nowrap;
 }
 
 #fork-pic {
-    right: 111px;
-    top: 606px;
-    transform: rotate( -45deg );
+    right: 815px;
+    top: 1698px;
+    transform: rotate( 50deg );
 }
+
 #another-spoon-pic {
-    right: 900px;
-    top: 1485px;
+    right: 286px;
+    top: 654px;
     transform: rotate( 24deg );
 }
 
 #arrow {
     right: 459px;
-    top: 1260px;
+    top: 1274px;
     transform: rotate( 24deg );
 }
+#smaller-fork {
+    right: 108px;
+    top: 422px;
+    transform: rotate( 148deg );
+}
 
-/*------------------------------------------ תוכן ----------------------------------*/
+#smaller-knife {
+    right: 1048px;
+    top: 241px;
+    transform: rotate( 29deg );
+}
+
+#another-spoon {
+    right: 1009px;
+    top: 1323px;
+    transform: rotate( 107deg );
+}
+
+
+                        /*------------------------------------------ תוכן ----------------------------------*/
 #firsth1 {
     font-size: 72pt;
     margin-top: 17px;
@@ -329,7 +350,7 @@ h2{
 }
 
 
-/*---------------------- פדינג לתוכן -----------------------*/
+/*------- פדינג לתוכן ------*/
 .makePad{
     padding-right:100px;
 }
@@ -405,10 +426,7 @@ fieldset > p{
 }
 
 
-
-
-
-/*--  תמונות סימני שאלה עם מעבר עכבר-------*/
+/*-- תמונות עם מעבר עכבר להצגת תמונות של המרכיבים-------*/
 .photo-icon {
     padding: 5px;
     left: 0;
@@ -416,7 +434,7 @@ fieldset > p{
 }
 
 
-/*-----------------------------------------------מעברי עכבר של המרכיבים- תמונות עגולות --------------------*/
+/*-----------------------------מעברי עכבר של המרכיבים- תמונות עגולות --------------------*/
 
 #egg-pic, #cheese-pic, #pita-pic, #oil-pic, #greens-pic {
     position: absolute;
@@ -672,7 +690,7 @@ iframe {
         align-items: center;
     }
 
-
+/*------תפריט ניווט תחתון-----*/
 #bottomUl {
     margin: 0 auto;
     padding-right: 326px;
@@ -713,7 +731,7 @@ iframe {
     width: 20px;
     height: 20px;
 }
-
+/*------יצירת אייקון אינסטגרם קצת יותר גדול--*/
 #iconsALL > a:last-child > img {
     width: 22px;
     height: 22px;

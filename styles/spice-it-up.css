@@ -4,7 +4,9 @@
     font-family: 'GveretLevinAlefAlefAlef-Regular';
     src: url('../font/GveretLevinAlefAlefAlef-Regular.ttf') format('truetype');
 }
-
+html { /*----יצירת גלילה חלקה של המסך----*/
+    scroll-behavior: smooth;
+}
 body {
     direction: rtl;
     background-image: url('../images/background/background-squares-01.png');
@@ -19,7 +21,7 @@ body {
     width: 1280px;
     display: contents;
 }
-
+/*------עוטף את כל החלק של התוכן-----*/
 #mainContent {
     background-color: #F4F2EF;
     width: 1280px;
@@ -67,7 +69,7 @@ ul#upperNav {
 }
 
 
-/*---------------- כפתור "דלג לתוכן -----------------------------"*/
+/*---------------- כפתור "דלג לתוכן -----------------------------*/
 #contentA {
     text-align: center;
     border: solid 1px #663333;
@@ -156,7 +158,7 @@ li.nav1 {
     align-items: center;
 }
 
-/*יצירת סרגל ניווט ראשי+ ברד קראמבס*/
+/*--------------הגדרות ברד קראמבס--------------*/
 ol#breadCrambs > li {
     display: inline-block;
 }
@@ -214,7 +216,7 @@ a.nav:hover {
 }
 
                             /*------------------------------------ תוכן -----------------------------------------------*/
-/*-------------ייצוג אינטראקטיבי ----------------------*/
+/*----------ייצוג אינטראקטיבי ------------*/
 h1 {
     font-size:42pt;
     color: #663333;
@@ -233,10 +235,21 @@ p {
     font-weight:400;
     margin-top:3px;
 }
+
+ iframe{
+    width:1212px;
+    height:682px;
+}
+#spice-It-up {
+    justify-content: center;
+    display: flex;
+    margin-top: 39px;
+}
+
 /*---------------תמונות רקע - ללא משמעות --------------*/
 .BGdiv {
     width: 10px;
-    height: 30px;
+    height: 4px;
     white-space: nowrap;
 }
 
@@ -245,27 +258,21 @@ p {
     }
 
 #spoon-pic {
-    right: 14px;
-    top: 10px;
-    transform: rotate( -78deg );
-}
-
-#fork-pic {
-    right: 1076px;
-    top: -186px;
-    transform: rotate( -143deg );
+    right: 1027px;
+    top: -160px;
+    transform: rotate( -27deg );
 }
 
 #knife-pic {
-    right: 11px;
-    top: -25px;
-    transform: rotate( -64deg );
+    right: 476px;
+    top: -251px;
+    transform: rotate( -108deg );
 }
 
 #arrow {
-    right: 694px;
-    top: -179px;
-    transform: rotate( 263deg );
+    right: 691px;
+    top: -78px;
+    transform: rotate( -95deg );
 }
 
 /*---------------------------------------פוטר-------------------------------------*/
@@ -281,7 +288,7 @@ footer {
     align-items: center;
 }
 
-
+/*------תפריט ניווט תחתון-----*/
 #bottomUl {
     margin: 0 auto;
     padding-right: 326px;
@@ -322,7 +329,7 @@ footer {
     width: 20px;
     height: 20px;
 }
-
+/*------יצירת אייקון אינסטגרם קצת יותר גדול--*/
 #iconsALL > a:last-child > img {
     width: 22px;
     height: 22px;
