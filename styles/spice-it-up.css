@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'GveretLevinAlefAlefAlef-Regular';
-    src: url('../font/GveretLevinAlefAlefAlef-Regular.ttf') format('truetype');
+    src: url('10-be-bishul/font/GveretLevinAlefAlefAlef-Regular.ttf') format('truetype');
 }
 html { /*----יצירת גלילה חלקה של המסך----*/
     scroll-behavior: smooth;
